@@ -43,21 +43,32 @@ ul {
 .header .navbar {
   width: 100%;
   background-color: #fff;
-  padding: 10px 12px;
+  padding: 10px 28px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   box-shadow: 0 0 10px #ddd;
 }
+@media (min-width: 991px) {
+  .header .navbar {
+    padding: 10px 100px;
+  }
+}
 .header .navbar__logo {
   color: #2ECC71;
-  font-size: 1.05rem;
+  font-size: 21px;
   font-weight: bold;
   height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 991px) {
+  .header .navbar__logo {
+    height: 60px;
+    font-size: 28px;
+  }
 }
 .header .navbar__hamburger > span {
   display: block;
@@ -78,6 +89,47 @@ ul {
 }
 .header .navbar__hamburger.open > span:last-child {
   transform: rotate(-45deg);
+}
+.header .navbar__lists {
+  display: flex;
+  height: 100%;
+}
+@media (max-width: 990px) {
+  .header .navbar__lists {
+    display: none;
+  }
+}
+.header .navbar__lists li {
+  height: 100%;
+}
+.header .navbar__lists li:not(:last-child) {
+  margin-right: 20px;
+}
+.header .navbar__lists li a {
+  height: 100%;
+  padding: 8px 10px;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 400;
+  transition: all 200ms ease-in-out;
+  border-radius: 0 0 8px 8px;
+}
+.header .navbar__lists li a:hover {
+  border-top: 4px solid #2ECC71;
+  background-color: #ABEBC6;
+}
+.header .navbar .btn a {
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #2ECC71;
+  padding: 6px 16px;
+  color: #fff;
+  border-radius: 25px;
+  transition: all 200ms ease-in-out;
+}
+.header .navbar .btn a:hover {
+  background-color: #58D68D;
+  color: #222;
 }
 .header .navbar__links {
   width: 80%;
