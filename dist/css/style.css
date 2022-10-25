@@ -41,6 +41,10 @@ ul {
   z-index: 9999;
 }
 .header .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   background-color: #fff;
   padding: 10px 28px;
@@ -185,4 +189,82 @@ ul {
 }
 .header .overlay.active {
   left: 0;
+}
+
+.hero {
+  width: 100%;
+  margin-top: 15px;
+}
+@media (min-width: 768px) {
+  .hero {
+    margin: 40px 0;
+  }
+}
+.hero .container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  text-align: center;
+}
+.hero .container .image {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .hero .container .image img {
+    max-width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .hero .container .image img {
+    max-width: 65%;
+  }
+}
+.hero .container .content {
+  width: 100%;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .hero .container .content {
+    padding: 20px 100px;
+  }
+}
+.hero .container .content .title {
+  text-align: center;
+}
+.hero .container .content .title h1 {
+  color: #2ECC71;
+  font-size: 2rem;
+}
+.hero .container .content .title h3 {
+  margin-bottom: 0.5rem;
+}
+.hero .container .content .description p {
+  color: #777;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+.hero .container .content .hero-btn {
+  width: 60%;
+  margin-inline: auto;
+}
+.hero .container .content .hero-btn a {
+  color: #fff;
+  background-color: #2ECC71;
+  font-size: 1.15rem;
+  font-weight: 500;
+  padding: 4px 18px;
+  border-radius: 25px;
+  transition: all 200ms ease-in-out;
+}
+@media (min-width: 768px) {
+  .hero .container .content .hero-btn a {
+    padding: 8px 26px;
+  }
+}
+.hero .container .content .hero-btn a:hover {
+  background-color: #58D68D;
 }/*# sourceMappingURL=style.css.map */
