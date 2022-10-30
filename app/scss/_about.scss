@@ -1,5 +1,135 @@
 
-.about {
-    background-color: #D5F5E3;
-    margin: 1rem 0;
+.services {
+
+    .main-title {
+        margin-bottom: 2rem;
+    }
+
+    .container {
+        width: 90%;
+        display: grid;
+        gap: 1rem;
+        
+
+        @include mobile-large {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include desktop {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include large {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        
+
+        .card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 10px #D7DBDD;
+
+            .img {
+                height: 150px;
+            }
+
+            .title {
+
+                h3 {
+                    text-align: center;
+                    margin: 1.5rem 0.5rem 0;
+                    font-size: 1.1rem;
+                }
+            }
+
+            .description {
+                
+                p {
+                    font-size: 1rem;
+                    color: #777;
+                    text-align: center;
+                    margin: .5rem 0;
+                    padding: 10px;
+                    line-height: 1.6;
+                }
+            }
+
+            .btn-cards {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: .8rem;
+
+                .card-btn {
+                    background-color: $Light-green;
+                    border: none;
+                    border-radius: 12px;
+                    padding: 8px 12px;
+                    font-size: 1rem;
+                    color: white;
+                    cursor: pointer;
+                    transition: all 200ms ease-in-out;
+
+                    &:hover {
+                        background-color: $Green;
+                    }
+                }
+            }
+        }
+
+        .las-vegas {
+            
+            .img {
+                background-image: url(../../imgs/Las-Vegas.webp);
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        .marrakech {
+            
+            .img {
+                background-image: url(../../imgs/morocco.jpeg);
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        .dubai {
+            
+            .img {
+                background-image: url(../../imgs/emirate.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        .tokyo {
+            
+            .img {
+                background-image: url(../../imgs/tokyo.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        .paris {
+            
+            .img {
+                background-image: url(../../imgs/france.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        .london {
+            
+            .img {
+                background-image: url(../../imgs/london.webp);
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
 }
