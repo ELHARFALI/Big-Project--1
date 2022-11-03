@@ -1,8 +1,13 @@
 
 .services {
+        margin-top: 1.8rem;
 
     .main-title {
         margin-bottom: 2rem;
+
+        @include mobile {
+            margin-bottom: 1rem;
+        }
     }
 
     .container {

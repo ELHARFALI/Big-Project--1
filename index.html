@@ -1,174 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="./dist/css/style.css">
+    <link rel="stylesheet" href="./dist/css/style.css" />
 
     <script src="./app/js/script.js" defer></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <header class="header">
+      <nav class="navbar">
+        <a href="#" class="navbar__logo">Elharfali</a>
 
-        <nav class="navbar">
+        <a href="#" class="navbar__hamburger hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
 
-            <a href="#" class="navbar__logo">Elharfali</a>
+        <ul class="navbar__links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a class="btn-menu hide-for-desktop" href="#">Contact us</a></li>
+        </ul>
 
-            <a href="#" class="navbar__hamburger hide-for-desktop">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
+        <ul class="navbar__lists hide-for-tablet">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Skills</a></li>
+        </ul>
 
-            <ul class="navbar__links">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a class="btn-menu hide-for-desktop" href="#">Contact us</a></li>
-            </ul>
+        <div class="btn hide-for-tablet">
+          <a href="#" class="global-btn">Contact us</a>
+        </div>
+      </nav>
 
-            <ul class="navbar__lists hide-for-tablet">
-                    <li ><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Skills</a></li>
-            </ul>
-
-            <div class="btn hide-for-tablet">
-                <a href="#" class="global-btn">Contact us</a>
-            </div>
-
-        </nav>
-
-        <div class="overlay"></div>
-
+      <div class="overlay"></div>
     </header>
-    
 
     <section class="hero">
-        <div class="container">
-
-            <div class="content">
-                <div class="title">
-                    <h1>Hello World</h1>
-                    <h3>Hotels Company</h3>
-                </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat amet atque corrupti deserunt alias!</p>
-                </div>
-                <div class="hero-btn">
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-
-            <div class="image">
-                <img src="./imgs/hero.svg" alt="">
-            </div>
-
+      <div class="container">
+        <div class="content">
+          <div class="title">
+            <h1>Hello World</h1>
+            <h3>Hotels Company</h3>
+          </div>
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              placeat amet atque corrupti deserunt alias!
+            </p>
+          </div>
+          <div class="hero-btn">
+            <a href="#">Read More</a>
+          </div>
         </div>
+
+        <div class="image">
+          <img src="./imgs/hero.svg" alt="" />
+        </div>
+      </div>
     </section>
 
     <section class="services">
+      <p class="main-title">Services</p>
 
-        <p class="main-title">
-            Services
-        </p>
-
-        <div class="container">
-
-            <div class="card las-vegas">
-                <div class="img">
-                </div>
-                <div class="title">
-                    <h3>Las Vegas</h3>
-                </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit sunt amet quasi! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. </p>
-                </div>
-                <div class="btn-cards">
-                    <button class="card-btn">Read More</button>
-                </div>
-            </div>
-
-            <div class="card marrakech">
-                <div class="img">
-                </div>
-                <div class="title">
-                    <h3>Marrakech</h3>
-                </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit sunt amet quasi! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. </p>
-                </div>
-                <div class="btn-cards">
-                    <button class="card-btn">Read More</button>
-                </div>
-            </div>
-
-            <div class="card dubai">
-                <div class="img">
-                </div>
-                <div class="title">
-                    <h3>Dubai</h3>
-                </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit sunt amet quasi! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. </p>
-                </div>
-                <div class="btn-cards">
-                    <button class="card-btn">Read More</button>
-                </div>
-            </div>
-
-            <div class="card tokyo">
-                <div class="img">
-                </div>
-                <div class="title">
-                    <h3>Tokyo</h3>
-                </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit sunt amet quasi! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. </p>
-                </div>
-                <div class="btn-cards">
-                    <button class="card-btn">Read More</button>
-                </div>
-            </div>
-
-            <div class="card paris">
-                <div class="img">
-                </div>
-                <div class="title">
-                    <h3>Paris</h3>
-                </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit sunt amet quasi! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. </p>
-                </div>
-                <div class="btn-cards">
-                    <button class="card-btn">Read More</button>
-                </div>
-            </div>
-
-            <div class="card london">
-                <div class="img">
-                </div>
-                <div class="title">
-                    <h3>London</h3>
-                </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit sunt amet quasi! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. </p>
-                </div>
-                <div class="btn-cards">
-                    <button class="card-btn">Read More</button>
-                </div>
-            </div>
-
+      <div class="container">
+        <div class="card las-vegas">
+          <div class="img"></div>
+          <div class="title">
+            <h3>Las Vegas</h3>
+          </div>
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Reprehenderit sunt amet quasi! Lorem ipsum dolor sit amet. Lorem
+              ipsum dolor sit amet.
+            </p>
+          </div>
+          <div class="btn-cards">
+            <button class="card-btn">Read More</button>
+          </div>
         </div>
 
+        <div class="card marrakech">
+          <div class="img"></div>
+          <div class="title">
+            <h3>Marrakech</h3>
+          </div>
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Reprehenderit sunt amet quasi! Lorem ipsum dolor sit amet. Lorem
+              ipsum dolor sit amet.
+            </p>
+          </div>
+          <div class="btn-cards">
+            <button class="card-btn">Read More</button>
+          </div>
+        </div>
+
+        <div class="card dubai">
+          <div class="img"></div>
+          <div class="title">
+            <h3>Dubai</h3>
+          </div>
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Reprehenderit sunt amet quasi! Lorem ipsum dolor sit amet. Lorem
+              ipsum dolor sit amet.
+            </p>
+          </div>
+          <div class="btn-cards">
+            <button class="card-btn">Read More</button>
+          </div>
+        </div>
+
+        <div class="card tokyo">
+          <div class="img"></div>
+          <div class="title">
+            <h3>Tokyo</h3>
+          </div>
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Reprehenderit sunt amet quasi! Lorem ipsum dolor sit amet. Lorem
+              ipsum dolor sit amet.
+            </p>
+          </div>
+          <div class="btn-cards">
+            <button class="card-btn">Read More</button>
+          </div>
+        </div>
+
+        <div class="card paris">
+          <div class="img"></div>
+          <div class="title">
+            <h3>Paris</h3>
+          </div>
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Reprehenderit sunt amet quasi! Lorem ipsum dolor sit amet. Lorem
+              ipsum dolor sit amet.
+            </p>
+          </div>
+          <div class="btn-cards">
+            <button class="card-btn">Read More</button>
+          </div>
+        </div>
+
+        <div class="card london">
+          <div class="img"></div>
+          <div class="title">
+            <h3>London</h3>
+          </div>
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Reprehenderit sunt amet quasi! Lorem ipsum dolor sit amet. Lorem
+              ipsum dolor sit amet.
+            </p>
+          </div>
+          <div class="btn-cards">
+            <button class="card-btn">Read More</button>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <section class="gallery">
+      <p class="main-title">Our Gallery</p>
 
-</body>
+      <div class="container"></div>
+    </section>
+  </body>
 </html>
